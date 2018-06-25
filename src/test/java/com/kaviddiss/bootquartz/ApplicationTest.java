@@ -26,6 +26,6 @@ public class ApplicationTest extends AbstractTransactionalTestNGSpringContextTes
 
         scheduler.scheduleJob(jobDetail, trigger);
 
-        Thread.sleep(5000);
+        Thread.sleep(7000);
     }
 }

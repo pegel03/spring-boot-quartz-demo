@@ -57,7 +57,7 @@ public class SchedulerConfig {
         Scheduler scheduler = factory.getScheduler();
         scheduler.setJobFactory(jobFactory);
         scheduler.scheduleJob((JobDetail) sampleJobTrigger.getJobDataMap().get("jobDetail"), sampleJobTrigger);
-
+        System.out.println("pgl starting de scheduler");
         scheduler.start();
         return scheduler;
     }
